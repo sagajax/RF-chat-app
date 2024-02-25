@@ -32,6 +32,8 @@ const SendMessage = () => {
         type="text"
         className="form-input__input"
         placeholder="type message..."
+        value={message}
+        onChange={(e)=> setMessage(e.target.value)}
       />
       <button type="submit">Send</button>
     </form>
