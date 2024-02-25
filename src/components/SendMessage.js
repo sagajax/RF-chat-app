@@ -6,7 +6,7 @@ const SendMessage = () => {
   const [message, setMessage] = useState("");
   const sendMessage = async (event) => {
     event.preventDefault();
-    if (message.trim() === "") {
+    if (message === "") {
       alert("Enter valid message");
       return;
     }
